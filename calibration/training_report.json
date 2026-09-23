@@ -1,0 +1,92 @@
+{
+  "model": {
+    "type": "size_border_score_correction",
+    "size_limit": 0.09,
+    "power": 1.0,
+    "cutoff": 0.35,
+    "border_margin_limit_px": 5.0,
+    "border_score_scale": 0.51668,
+    "formula": "raw_score * min(1, (size_limit / area_fraction) ** power) * (border_score_scale if min_border_margin_px <= border_margin_limit_px else 1)",
+    "image_count": 68,
+    "reviewed_positive_count": 107,
+    "reviewed_negative_count": 47,
+    "trusted_positive_count": 9,
+    "trusted_negative_count": 1
+  },
+  "training_pages": 47,
+  "held_out_pages": 13,
+  "training_baseline": {
+    "true_positive": 78,
+    "false_positive": 7,
+    "false_negative": 5,
+    "true_negative": 34,
+    "precision": 0.9176,
+    "recall": 0.9398,
+    "f1": 0.9286
+  },
+  "training_corrected": {
+    "true_positive": 78,
+    "false_positive": 4,
+    "false_negative": 5,
+    "true_negative": 37,
+    "precision": 0.9512,
+    "recall": 0.9398,
+    "f1": 0.9455
+  },
+  "held_out_baseline": {
+    "true_positive": 22,
+    "false_positive": 0,
+    "false_negative": 2,
+    "true_negative": 6,
+    "precision": 1.0,
+    "recall": 0.9167,
+    "f1": 0.9565
+  },
+  "held_out_corrected": {
+    "true_positive": 22,
+    "false_positive": 0,
+    "false_negative": 2,
+    "true_negative": 6,
+    "precision": 1.0,
+    "recall": 0.9167,
+    "f1": 0.9565
+  },
+  "held_out_border_corrected": {
+    "true_positive": 22,
+    "false_positive": 0,
+    "false_negative": 2,
+    "true_negative": 6,
+    "precision": 1.0,
+    "recall": 0.9167,
+    "f1": 0.9565
+  },
+  "all_reviewed_baseline": {
+    "true_positive": 100,
+    "false_positive": 7,
+    "false_negative": 7,
+    "true_negative": 40,
+    "precision": 0.9346,
+    "recall": 0.9346,
+    "f1": 0.9346
+  },
+  "all_reviewed_corrected": {
+    "true_positive": 100,
+    "false_positive": 4,
+    "false_negative": 7,
+    "true_negative": 43,
+    "precision": 0.9615,
+    "recall": 0.9346,
+    "f1": 0.9479
+  },
+  "all_reviewed_border_corrected": {
+    "true_positive": 100,
+    "false_positive": 3,
+    "false_negative": 7,
+    "true_negative": 44,
+    "precision": 0.9709,
+    "recall": 0.9346,
+    "f1": 0.9524
+  },
+  "unreviewed_candidates": 201,
+  "note": "仅评估逐框核对的候选，未测未检出的手；校正分数不是概率。"
+}

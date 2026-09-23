@@ -1,0 +1,4 @@
+dghs-imgutils==0.19.0
+Pillow>=10,<13
+onnxruntime>=1.20,<2
+scikit-learn>=1.5,<2

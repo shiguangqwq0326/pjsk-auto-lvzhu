@@ -1,0 +1,14 @@
+{
+  "type": "size_border_score_correction",
+  "size_limit": 0.09,
+  "power": 1.0,
+  "cutoff": 0.35,
+  "border_margin_limit_px": 5.0,
+  "border_score_scale": 0.51668,
+  "formula": "raw_score * min(1, (size_limit / area_fraction) ** power) * (border_score_scale if min_border_margin_px <= border_margin_limit_px else 1)",
+  "image_count": 68,
+  "reviewed_positive_count": 107,
+  "reviewed_negative_count": 47,
+  "trusted_positive_count": 9,
+  "trusted_negative_count": 1
+}
