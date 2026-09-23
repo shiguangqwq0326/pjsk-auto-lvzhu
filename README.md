@@ -1,6 +1,11 @@
 # 恐怖！特大lvzhu来袭！
 
-## 由于忘了怎么传release，请将仓库中所有内容下载并保存在名为"lvzhu。！"的文件夹中，否则程序可能报错
+## 下载
+
+前往[https://github.com/shiguangqwq0326/pjsk-auto-lvzhu/releases](https://github.com/shiguangqwq0326/pjsk-auto-lvzhu/releases/tag/v1.0.0)进行下载喵
+下载并解压压缩包后按下方运行喵
+
+## 关于运行
 
 双击 `启动.bat`，输入一张图片的完整路径并回车。也可以将图片拖到 BAT 文件上。程序在**原图片所在文件夹**生成 `原文件名_overlay.gif`，原图片保持不变；再次处理同名图片会覆盖同名成品 GIF。
 
